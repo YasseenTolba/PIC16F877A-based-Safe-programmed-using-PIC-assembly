@@ -1,7 +1,10 @@
 # PIC16F877A-based-Safe-programmed-using-PIC-assembly
+**Summary**
+
 Assembly program for a PIC16F877A microcontroller that controls a safe. User inputs the password using dual inline package switches. Based on the user input the program either opens the safe for correct password or indicates an incorrect password is entered, then finally, on the third wrong entry an alarm is turned on and safe until master password is entered. The state of the safe is displayed on a seven-segment display. The user password is recorded in the EEPROM.
 
 **Approach**
+
 To set up the password for the first time the safe needs to be unlocked either by using the master password or the user password, then the user enters the new password and presses the enter password button. If the password is not the same as the old password, red LEDs will turn on in sequence and the seven segment display will display the letter ‘F’. To test the program the user will enter the password using the DIP switches, the password will be evaluated bit by bit, in case of a match, the solenoid will be actuated in turn turning off the blue LED and turning on the Green LED. Otherwise, the red LED will be turned on. If the password is inserted incorrectly three times in a row, the safe will lock by turning on all three red LEDs and turning off the white LED. The seven segment and red LEDs will display the number of wrong entries. On the third wrong entry the safe will lock until master password is entered, seven segment will display ‘E’ and all three red LEDs will be on while, buzzer buzzes three times.
 
 **Circuit Schematic**
