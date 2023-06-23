@@ -6,7 +6,7 @@ To set up the password for the first time the safe needs to be unlocked either b
 
 **Circuit Schematic**
 
-<img width="366" alt="image" src="https://github.com/YasseenTolba/PIC16F877A-based-Safe-programmed-using-PIC-assembly/assets/55665255/1b6bffa2-894f-4451-9d3d-86e84e7f2a79">
+<img width="732" alt="image" src="https://github.com/YasseenTolba/PIC16F877A-based-Safe-programmed-using-PIC-assembly/assets/55665255/1b6bffa2-894f-4451-9d3d-86e84e7f2a79">
 
 
 The PIC16F877A is connected to a 16 MHZ external oscillator. Port B is set as output with its resistors as pull up. Port B is used for password and buttons entry. LEDs are connected to ground using 220 ohm resistors and to Port C in the MCU along the buzzer. The relay (solenoid) is connected also to Port C with its output connected to the blue and green LEDs. The seven-segment display is connected internally to a binary coded decimal decoder and connected to Port D. Reset button is pulled up using an external resistor and power source and is connected to a push button that is connected to ground. 
